@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ cv.firstname }} {{ cv.lastname }}'s CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="container mx-auto px-4 py-8">
+        <a href="{% url 'home' %}" class="text-blue-500 underline">&larr; Back to list</a>
+
+        <div class="bg-white p-6 rounded-2xl shadow mt-4">
+            <h1 class="text-3xl font-bold">{{ cv.firstname }} {{ cv.lastname }}</h1>
+            <p class="text-gray-700 mt-2 mb-6">{{ cv.bio }}</p>
+
+            <div class="mb-4">
+                <h2 class="text-xl font-semibold">Contact Info</h2>
+                <p>Email: {{ cv.contacts.email }}</p>
+                <p>Phone: {{ cv.contacts.phone }}</p>
+            </div>
+
+            <div class="mb-4">
+                <h2 class="text-xl font-semibold">Skills</h2>
+                <ul class="list-disc list-inside text-gray-600">
+                    {% for skill in cv.skills.all %}
+                        <li>{{ skill.name }} ({{ skill.level }})</li>
+                    {% empty %}
+                        <li>No skills listed.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-semibold">Projects</h2>
+                <ul class="list-disc list-inside text-gray-600">
+                    {% for project in cv.projects.all %}
+                        <li>
+                            <strong>{{ project.name }}</strong> — {{ project.description }}
+                            {% if project.link %}
+                                <a href="{{ project.link }}" target="_blank" class="text-blue-500 underline ml-2">View</a>
+                            {% endif %}
+                        </li>
+                    {% empty %}
+                        <li>No projects listed.</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

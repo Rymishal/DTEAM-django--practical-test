@@ -1,0 +1,74 @@
+[
+  {
+    "model": "Main.contactinfo",
+    "pk": 1,
+    "fields": {
+      "email": "johndoe@example.com",
+      "phone": "+123456789"
+    }
+  },
+  {
+    "model": "Main.skill",
+    "pk": 1,
+    "fields": {
+      "name": "Python",
+      "level": "Expert"
+    }
+  },
+  {
+    "model": "Main.skill",
+    "pk": 2,
+    "fields": {
+      "name": "Django",
+      "level": "Expert"
+    }
+  },
+  {
+    "model": "Main.project",
+    "pk": 1,
+    "fields": {
+      "name": "Portfolio Website",
+      "description": "A personal portfolio website built using Django and React."
+    }
+  },
+  {
+    "model": "Main.cv",
+    "pk": 1,
+    "fields": {
+      "firstname": "John",
+      "lastname": "Doe",
+      "bio": "Experienced software developer.",
+      "contacts": 1,
+      "skills": [1, 2],
+      "projects": [1]
+    }
+  },
+  {
+    "model": "Main.contactinfo",
+    "pk": 2,
+    "fields": {
+      "email": "mykhailorybalka@example.com",
+      "phone": "+123456789"
+    }
+  },
+  {
+    "model": "Main.skill",
+    "pk": 3,
+    "fields": {
+      "name": "Java",
+      "level": "Expert"
+    }
+  },
+  {
+    "model": "Main.cv",
+    "pk": 2,
+    "fields": {
+      "firstname": "Mykhailo",
+      "lastname": "Rybalka",
+      "bio": "Experienced software developer with a passion for building web applications.",
+      "contacts": 2,
+      "skills": [3],
+      "projects": [1]
+    }
+  }
+]

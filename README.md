@@ -98,3 +98,17 @@ Complete each task thoroughly, commit your work following the branch-and-merge s
 make sure your README.md clearly explains how to install, run, and test everything. We look forward 
 to reviewing your submission! 
 Thank you! 
+
+
+### Loading Sample CV Fixture
+
+To load the sample CV fixture into your Django project's database, follow these steps:
+
+1. Ensure your Django app containing the CV model is set up and running.
+
+2. Open a terminal or command prompt and navigate to your project directory.
+
+3. Run the following Django management command to load the fixture:
+
+   ```bash
+   python manage.py loaddata main\\fixtures\\sample_cv.json
