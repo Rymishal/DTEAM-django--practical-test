@@ -112,3 +112,27 @@ To load the sample CV fixture into your Django project's database, follow these 
 
    ```bash
    python manage.py loaddata main\\fixtures\\sample_cv.json
+   ```
+### Run App   
+   ```
+   python manage.py runserver
+   ```
+### Running Tests
+
+   To run the test suite for the project:
+   
+   ```bash
+   python manage.py test
+   ```
+
+   To check test coverage:
+   
+   ```bash
+   coverage run manage.py test
+   
+   coverage report
+   
+   coverage html
+   
+   start htmlcov/index.html
+   ```
