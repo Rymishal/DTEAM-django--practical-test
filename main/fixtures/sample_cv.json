@@ -1,6 +1,6 @@
 [
   {
-    "model": "Main.contactinfo",
+    "model": "main.contactinfo",
     "pk": 1,
     "fields": {
       "email": "johndoe@example.com",
@@ -8,7 +8,7 @@
     }
   },
   {
-    "model": "Main.skill",
+    "model": "main.skill",
     "pk": 1,
     "fields": {
       "name": "Python",
@@ -16,7 +16,7 @@
     }
   },
   {
-    "model": "Main.skill",
+    "model": "main.skill",
     "pk": 2,
     "fields": {
       "name": "Django",
@@ -24,7 +24,7 @@
     }
   },
   {
-    "model": "Main.project",
+    "model": "main.project",
     "pk": 1,
     "fields": {
       "name": "Portfolio Website",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "model": "Main.cv",
+    "model": "main.cv",
     "pk": 1,
     "fields": {
       "firstname": "John",
@@ -44,7 +44,7 @@
     }
   },
   {
-    "model": "Main.contactinfo",
+    "model": "main.contactinfo",
     "pk": 2,
     "fields": {
       "email": "mykhailorybalka@example.com",
@@ -52,7 +52,7 @@
     }
   },
   {
-    "model": "Main.skill",
+    "model": "main.skill",
     "pk": 3,
     "fields": {
       "name": "Java",
@@ -60,7 +60,7 @@
     }
   },
   {
-    "model": "Main.cv",
+    "model": "main.cv",
     "pk": 2,
     "fields": {
       "firstname": "Mykhailo",

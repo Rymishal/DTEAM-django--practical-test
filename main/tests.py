@@ -8,8 +8,6 @@ class CVViewsTest(TestCase):
         contact = ContactInfo.objects.create(
             email='jane@example.com',
             phone='1234567890',
-            linkedin='https://linkedin.com/in/janedoe',
-            github='https://github.com/janedoe'
         )
         self.cv = CV.objects.create(
             firstname='Jane',
